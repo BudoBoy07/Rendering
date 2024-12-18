@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Worksheet for 02561 - Exercise by Jonatan Rasmussen s183649</title>
+    <meta name="author" content="Jonatan Rasmussen">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 18px; /* Increased font size */
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h5 {
+            font-size: 20px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        .solution-summary {
+            font-weight: bold;
+            color: darkgreen;
+            margin-top: 10px;
+        }
+
+        .formula {
+            background-color: #f0f0f0;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .center {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .button {
+            font-size: 18px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+  <h2>Worksheet 10, Exercise 4 by Jonatan Rasmussen s183649</h2>
+
+  <h5>
+    <ul>
+      <li>
+        <strong>Exercise 4:</strong> Discussion
+        <ul>
+          <li>Discuss the pros and cons of working with a third-party software tool (Cycles in Blender) for rendering as opposed to working with a customizable renderer like WebGPU.
+            <div class="formula">
+              Cycles is meant as a "complete package". Most features are built-in and this means that we (as developers) do not have to program the mathematical details ourselves, whereas you're expected to do this in WebGPU. However, WebGPU gives you freedom to build/customize any rendering you can think of.
+            </div>
+          </li>
+          <li>What are you missing in Cycles that WebGPU enables you to do?
+            <div class="formula">
+              In WebGPU I can play around with multiple rendering techniques in the same scene, this is much harder (or even impossible) to do in Cycles. Also, WebGPU can render in the browser, whereas Cycles only works offline.
+            </div>
+          </li>
+          <li>What features in Cycles would you consider a significant challenge to implement in WebGPU?
+            <div class="formula">
+              Volumetric rendering (fog effects and gasses) seems difficult to implement in WebGPU. In Cycles, this feature has already been build for me and I can tweak its parameters.
+            </div>
+          </li>
+        </ul>
+        <div class="solution-summary">
+          Cycles has more built-in tools and out-of-the-box features, but WebGPU is more customizable. There is a tradeoff where bulding tools from scratch comes with a lot of freedom at the cost of being more time-consuming.
+        </div>
+      </li>
+    </ul>
+  </h5>
+
+  <center>
+      <br>
+      <button onclick="window.location.href='../../../index.html';">Return to Main Page</button>
+  </center>
+</body>
+</html>

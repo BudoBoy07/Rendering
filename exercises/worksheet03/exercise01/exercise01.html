@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Worksheet for 02562 by Jonatan Rasmussen s183649</title>
+  <meta name="author" content="Jonatan Rasmussen s183649">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <script type="text/javascript" src="exercise01.js"></script>
+</head>
+<body>
+    <center>
+      <h2>Worksheet 03, Exercise 1 by Jonatan Rasmussen s183649</h2>
+      <canvas id="myCanvas" width="512" height="512"></canvas>
+      <br><br>
+      <div class="controls">
+        <div class="control-group">
+          <label for="zoomSlider">Zoom:</label>
+          <input type="range" id="zoomSlider" min="0.1" max="2" step="0.1" value="1">
+          <span id="zoomValue">1.0</span>
+        </div>
+        <div class="control-group">
+          <label for="sphereMaterialSelect">Sphere Material:</label>
+          <select id="sphereMaterialSelect">
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="matteMaterialSelect">Matte Material:</label>
+          <select id="matteMaterialSelect">
+            <option value="0" selected>Lambertian</option>
+            <option value="1">Base Color</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="textureSelect">Texture options:</label>
+          <select id="textureSelect">
+            <option value="0">No Texture</option>
+            <option value="1">Nearest</option>
+            <option value="2" selected>Linear</option>
+            <option value="3">Repeat</option>
+          </select>
+        </div>
+      </div>
+      <br>
+      <button onclick="window.location.href='../../../index.html';">Return to Main Page</button>
+    </center>
+</body>
+</html>

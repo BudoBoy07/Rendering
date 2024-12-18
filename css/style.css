@@ -1,0 +1,175 @@
+/* General Styles */
+body, html {
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
+    font-family: 'Source Sans Pro';
+  }
+
+  /* Worksheet Styles */
+  .worksheet-section {
+    padding: 7.5rem 0px;
+  }
+
+  .worksheet-section-heading h2 {
+    font-size: 3rem;
+  }
+
+  .worksheet-section-heading h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  .horizontalLine {
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 5vh 0px;
+  }
+
+  h1, h2, h3 {
+    font-weight: 700;
+  }
+
+  .worksheet-item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 20vw;
+    margin: 1rem 1rem;
+  }
+
+  .finalProject {
+    margin: 0 auto;
+  }
+
+  .worksheet-item .caption {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(33, 37, 41, 0.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .worksheet-item .caption .caption-content {
+    color: #fff;
+  }
+
+  .worksheet-item .caption .caption-content h2 {
+    font-size: 1vw;
+    text-transform: uppercase;
+  }
+
+  .worksheet-item .caption .caption-content p {
+    font-weight: 300;
+    font-size: 1.5vw;
+  }
+
+  .worksheet-item img {
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .worksheet-item, .worksheet-item .caption, .worksheet-item .caption .caption-content, .worksheet-item img {
+    transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s, opacity 0.25s;
+    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s, opacity 0.25s;
+    clip-path: inset(0px);
+    -webkit-clip-path: inset(0px);
+  }
+
+  .worksheet-item:hover img, .worksheet-item:hover .caption {
+    clip-path: inset(1rem);
+    -webkit-clip-path: inset(1rem);
+  }
+
+  /* Footer Styles */
+  footer.footer {
+    padding-bottom: 5rem;
+  }
+
+  /* Text Styles */
+  .text-secondary {
+    color: #ecb807 !important;
+  }
+
+  /* Additional Styles */
+  p {
+    background-color: #FFFFFF;
+    border: 10px solid #bd5d38;
+    border-radius: 5px;
+  }
+
+  .headline {
+    font-family: verdana;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+  }
+
+  .menu-project, .menu {
+    font-family: verdana;
+    font-size: 12px;
+    color: black;
+  }
+
+  .menu {
+    background-color: #bd5d38;
+  }
+
+  /* Canvas Styles */
+  .canvas-frame, .select-style {
+    color: white;
+    overflow: hidden;
+    width: 120%;
+    height: 75px;
+    box-shadow: inset 0px 1px 3px 0px #91b8b3;
+    background: linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+    background-color: #768d87;
+    border: 2px solid #566963;
+  }
+
+  /* Button Styles */
+  .myButton-clear-canvas, .myButton {
+    width: 35px;
+    height: 35px;
+    box-shadow: inset 0px 1px 3px 0px #91b8b3;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 2px 2px;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #2b665e;
+  }
+
+  .myButton-clear-canvas {
+    width: 120px;
+  }
+
+  .myButton-clear-canvas:hover, .myButton:hover {
+    background: linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+    background-color: #6c7c7c;
+  }
+
+  .myButton-clear-canvas:active {
+    position: relative;
+    top: 1px;
+  }
+
+  .myButton:focus {
+    font-size: 22px;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #759C64 5%, #BACDB1 100%);
+    position: relative;
+    top: 1px;
+  }
